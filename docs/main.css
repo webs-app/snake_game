@@ -4,6 +4,28 @@ body {
 }
 
 /* GAME BOARD STYLES */
+.head{
+  /* padding-top: constant(safe-area-inset-top); */
+  padding-top: env(safe-area-inset-top);
+  display: flex;
+  align-items: center;
+  background: #0c1021;
+  width: 90%;
+  margin: 5vw auto;
+  border-radius: 2vw;
+}
+.head_back{
+  width: 12vw;
+  height: 12vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2vw;
+  box-sizing: border-box;
+  background-color: #293050;
+  border-radius: 2vw;
+  color: rgb(255, 251, 251)
+}
 #gameContainer {
   /*
 	width and height of .gameBoardPixel should 1/40 of the width and height of #gameContainer,
@@ -12,6 +34,7 @@ body {
   width: 40vw;
   height: 40vw;
   margin: 2vw auto;
+ 
   background-color: #0c1021;
   border: solid 10px slategrey;
   border-radius: 10px;
@@ -76,15 +99,14 @@ body {
 }
 
 .developerDetails {
-  margin-top: 2vw;
   display: flex;
   flex-direction: column;
-  color: #0c1021;
+  color: #b9bcc5;
   font-family: monospace;
 }
 
 .developerDetails a {
-  color: #0c1021;
+  color: #b9bcc5;
 }
 
 @media only screen and (max-width: 768px) {
@@ -122,6 +144,11 @@ body {
     width: 20vw;
     font-size: 10vw;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    -webkit-user-select: none;
   }
 
   #onScreenControllers button:focus {
