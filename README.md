@@ -6,5 +6,4 @@
 
 ## Note:
 
-1. The docs folder contains the latest working files.
-2. Best result on Google Chrome.(Desktop)
+适配 webs  webApp 版本
